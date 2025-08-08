@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- head
+
+        Purpose:
+        - Title used here shows up in the browser tab
+        - Link to the favicon (small image that appears in the browser tab)
+        - Link to the CSS file (used to style the webpage)
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) (favicon)
+        - [ ] Any time after
+        -->
+        <title>KSA Connect</title>
+        <link rel="icon" href="img\ksa2.png">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <body>
+    
+       <!-- navbar
+        Purpose:
+        - Navigation bar that allows users to jump to different sections of the webpage
+        - Also holds buttons for user settings (dark mode, reduce motion)
+
+        When To Modify:
+        - [ ] Project 4 (REQUIRED FEATURE)
+        - [ ] Project 5 (REQUIRED FEATURE) 
+        - [ ] Project 8 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        -->
+
+        <div class="navbar">
+            <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Schedule">Schedule</a></li>
+            <li><a href="#Links">Links</a></li>
+            <li><button id="theme-button">✨</button></li>
+            </ul>
+        </div>
+        
+
+
+        <!-- headings
+
+        Purpose:
+        - Main header section of the webpage
+        - Contains the title, subtitle, image, and key buttons for the webpage
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 3 (REQUIRED FEATURE) 
+        - [ ] Project 4 (REQUIRED FEATURE) 
+        - [ ] Any time after
+        -->
+        <div class="header-container" id="Home">
+            <div class="header-item">
+                <img id="header-img" src="img/ksa2.png"/>
+            </div>
+            <div class="header-item">
+                <h1>Dickinson College KSA Community</h1>
+                <h5>Korean Student Association Connecting Hub</h5>
+                <div id="header-button">
+                    <button type="button">Sign up</button>
+                    <button type="button">About our Association</button>
+                </div>
+            </div>
+        </div>
+
+
+        
+        <!-- about
+
+        Purpose:
+        - Section for general info about the event
+        - Contains a video, description, and key points about the event
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <h2 id="About">About the Event</h2>
+        <iframe width="400" height="200" src="https://www.youtube.com/embed/fznsTCgM2po"></iframe>
+        <p>Kick off the new semester with a bang at the official KSA Welcome Back Party! This event is our traditional 
+            "Gae-gang Party" (개강파티) to celebrate the start of a new academic year and a great chance to reconnect with 
+            old friends after the break. We are excited to welcome all new and returning Korean students to join us for an
+             evening of fun, food, and making new memories. Don't miss this opportunity to start the semester strong 
+             with your KSA community!</p>
+
+        <h3>What to Expect</h3>
+        <h4>Good Food, Great Company, and the Perfect Start to Your Semester.</h4>
+        <ul>
+            <li> <b>Delicious Korean Food & Snacks:</b> <i>Get ready to enjoy a fantastic spread of authentic Korean party food and classic snacks. It's the perfect fuel for an evening of fun and conversation, all on us!</i></li>
+            <li> <b>Connect with New & Old Friends: </b> <i>This is the ideal opportunity to reunite with familiar faces after the break and welcome new members into our community. Whether you're a freshman or a senior, you'll find a friendly and welcoming space to make connections.</i></li>
+            <li> <b>Fun Activities & Semester Preview: </b> <i>Vibe to a curated playlist of K-Pop hits and popular tracks, and participate in fun icebreakers and games. You'll also get a sneak peek at our exciting event schedule for the semester, including our famous Korean Barbecue and Karaoke Nights!</i></li>
+        </ul>
+
+        <!-- schedule
+
+        Purpose:
+        - Section for specific info about the event's schedule
+        - Contains images and descriptions of each activity
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <h2 id="Schedule">Event Schedule</h2>
+        <div class="schedule-container">
+            <div class="schedule-item">
+                <img height="400" alt="Hotdog & Marshmallo Night" src="./img/2022_09_25_08_05_IMG_1830.JPG"/>
+                <h3>Hotdog & Marshmallow Night</h3>
+                <p>A Hotdog & Marshmallow Night is a fun, casual gathering where friends cook hotdogs and toast marshmallows together over an open fire.</p>
+            </div>
+            <div class="schedule-item">
+                <img height="400" alt="K-bbq night" src="./img/2022_11_26_10_00_IMG_2167.JPG"/>
+                <h3>Korean Barbecue Night</h3>
+                <p>Join us for an unforgettable evening of grilling delicious, authentic Korean meats and sharing good times with fellow members.</p>
+            </div>
+            <div class="schedule-item">
+                <img height="400" alt="karaoke night" src="./img/2022_08_12_18_10_IMG_1566.JPG"/>
+                <h3>Karaoke Night</h3>
+                <p>Sing your heart out to your favorite K-pop and classic hits at our fun-filled karaoke night, where everyone is a star.</p>
+            </div>
+        </div>
+        
+
+        <!-- rsvp
+        Purpose:
+        - Section for users to sign up for the event
+        - Contains a form for users to input their information, 
+        and a list of other users who have signed up
+
+        When To Modify:
+        - [ ] Project 6 (REQUIRED FEATURE) 
+        - [ ] Project 6 (STRETCH FEATURE) 
+        - [ ] Any time after
+        --> 
+        <div id="rsvp">
+            <h2>RSVP</h2>
+            <div class="rsvp-container">
+                <div class="rsvp-para">
+                    <!-- info goes here -->
+                     <p class="rsvp-discription">The break is over, and it's time to celebrate! 🎉 
+                        Kick off the new semester with a bang at the official KSA Welcome Back 
+                        "Gae-gang Party" (개강파티)! <br> Whether you're a new face or a familiar one, 
+                        come join us for a fun night of catching up, enjoying great food, and 
+                        starting the academic year together.<br>
+                        Don't miss this chance to reconnect with the KSA community.
+                        RSVP now to save your spot!
+                    </p>
+                </div>
+                
+                <div class="rsvp-participants" id="rsvp-participants">
+                    <p class='rsvp-item'>😈 John from Seoul has RSVP'd.</p>
+                    <p class='rsvp-item'>😈 Colton from New York has RSVP'd.</p>
+                    <p class='rsvp-item'>😈 Shin from Jeju has RSVP'd.</p>
+                </div>
+
+            </div>
+                <p id="rsvp-count">
+                    "⭐ 3 people have RSVP'd for KSA event!"
+                </p>
+
+            <!--- Sign RSVP Form --->
+            <div class="form-container">
+                <form id="rsvp-form" title="rsvp-form">
+                    <!-- form inputs go here -->
+                     <label>Name: </label>
+                     <input id="name" type="text">
+                     <label>You are From: </label>
+                     <input id="from" type="text">
+                     <label>Email: </label>
+                     <input id="email" type="text">
+                </form>
+                <!-- Submit button -->
+                <button id="rsvp-button">Submit RSVP</button>
+            </div>      
+        </div>
+
+        <!-- success modal
+
+        Purpose:
+        - Modal that appears when a user successfully signs up for the event
+        - Contains a personalized message and image
+
+        When To Modify:
+        - [ ] Project 9 (REQUIRED FEATURE)
+        - [ ] Project 9 (STRETCH FEATURE) 
+        - [ ] Any time after
+        --> 
+
+        <div id="success-modal" class="modal">
+            <div class="modal-container">
+                <div id="modal-item">
+                    <!-- Text element here -->
+                    <p>
+                        Welcome to KSA!!!!
+                    </p>
+                </div>
+                <div id="modal-item">
+                    <!-- Image element here -->
+                    <img height="400" src="img\welcome.jpg">
+                </div>
+            </div>
+        </div>
+
+        <!-- links
+
+        Purpose:
+        - Links to other resources related to the event
+
+        When To Modify:
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <h2 id="Links">Links</h2>
+
+        <!-- This <a> block is one link.  Copy and paste all 6 lines to create another link. -->
+        <div class="links-container">
+            <a class="links-item" href="https://www.instagram.com/dickinson_ksa/">
+                <article>
+                    <h4>Dickinson College KSA Instagram</h4>
+                </article>
+            </a>
+            <a class="links-item" href="https://www.dickinson.edu/info/20045/admissions/1176/international_student_admissions_information/3">
+                <article>
+                    <h4>International student admissions program in Dickinson College</h4>
+                </article>
+            </a>
+        </div>
+        <!-- footer [PLACEHOLDER] [ADDED IN UNIT 3] -->
+        <div class="footer">
+            <footer>
+                <a href="https://coeducation.dickinson.edu/node/2046">Learn More /</a>  
+                <a href="https://www.instagram.com/dickinson_ksa/">Contact Us!</a>
+            </footer>
+        </div>
+
+        <!-- script [PLACEHOLDER] [ADDED IN UNIT 5] -->
+        <script src="index.js"></script>
+    </body>
+</html>
